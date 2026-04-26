@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Task Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="main-wrapper">
+        <header class="app-header">
+            <div class="logo-badge"></div>
+            <h1>Task Timer <span>System</span></h1>
+        </header>
+
+        <section class="input-card">
+            <div class="input-row">
+                <input type="text" id="taskInput" placeholder="Task Name">
+                <input type="number" id="taskMinutes" placeholder="Mins" min="1" lang="en">
+            </div>
+            <button id="addTaskBtn" class="btn-add">
+                <i class="fas fa-plus"></i> Add Timed Task
+            </button>
+        </section>
+
+        <main id="taskBoard" class="tasks-container">
+            </main>
+
+        <footer class="main-footer">
+            <p>Connect with the Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/Sulaiman-Alsarhayd/sulaiman.github.io"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sulaiman-alsarhayd"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

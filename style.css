@@ -1,0 +1,130 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #38bdf8;
+    --danger: #fb7185;
+    --success: #34d399;
+    --text: #f8fafc;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-header { text-align: center; }
+
+.input-card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.input-row { display: flex; gap: 10px; margin-bottom: 12px; }
+
+input {
+    background: #334155;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1;
+    /* هذا السطر يضمن ظهور الأرقام بالإنجليزية حتى لو لغة الجهاز عربية */
+    font-variant-numeric: lining-nums;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+}
+
+#taskMinutes { 
+    width: 90px; 
+    flex: none; 
+    text-align: center;
+}
+
+/* لمنع ظهور الـ Spinners الغريبة في بعض المتصفحات */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin-left: 5px;
+}
+
+.btn-add {
+    width: 100%;
+    background: var(--accent);
+    color: #0f172a;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tasks-container { display: flex; flex-direction: column; gap: 15px; }
+
+.task-card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-header { display: flex; justify-content: space-between; align-items: center; }
+
+.task-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.timer-val { 
+    font-family: 'Courier New', monospace; 
+    font-size: 1.5rem; 
+    font-weight: bold;
+    font-variant-numeric: lining-nums;
+}
+
+.btn-play {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.social-links a { color: var(--text); text-decoration: none; }
